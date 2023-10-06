@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kulki</title>
+    <script type="module" defer src="./src/script.ts"></script>
+
+</head>
+
+<body id="body">
+
+</body>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .block {
+        width: 48px;
+        height: 48px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+
+        background: rgb(205, 205, 205);
+        background: radial-gradient(circle, rgba(205, 205, 205, 0.1) 0%, rgba(123, 124, 122, 0.3) 100%);
+    }
+
+    .ball {
+        width: 40px;
+        height: 40px;
+        border-radius: 21px;
+        background-color: red;
+        border: 1px solid black;
+        background: rgb(94, 154, 255);
+        background: radial-gradient(circle, rgba(246, 240, 171, 0.5) 0%, rgba(83, 252, 70, 0.2) 100%);
+    }
+
+
+    .block:hover {
+        background-color: rgba(255, 200, 170, 0.2);
+        cursor: pointer;
+    }
+
+    #box {
+        border: 3px solid black;
+        width: 450px;
+        height: 450px;
+        border-width: thin;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-around;
+    }
+
+    #next_box {
+        width: 162px;
+        height: 200px;
+        margin-right: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #score_box {
+        width: 160px;
+        height: 60px;
+        margin-right: 50px;
+        border: 1px solid black;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #next {
+        width: 160px;
+        height: 60px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #next_text {
+        width: 160px;
+        height: 20px;
+        text-align: center;
+        font-weight: bold;
+
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+</html>
